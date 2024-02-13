@@ -191,7 +191,7 @@ const rewriteBody = async (res) => {
  * @returns
  */
 const home = async (pathname) => {
-  const baseUrl = 'https://raw.githubusercontent.com/Harry-zklcdc/go-proxy-bingai/master/';
+  const baseUrl = 'https://raw.githubusercontent.com/cjg2772/go-proxy-bingai-pro/master/';
   let url;
   if (pathname.indexOf('/web/') === 0) {
     url = pathname.replace('/web/', baseUrl+'web/');
