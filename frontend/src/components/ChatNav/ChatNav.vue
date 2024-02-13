@@ -405,7 +405,7 @@ const autoPassCFChallenge = async () => {
             </NFormItem>
           </NGridItem>
           <NGridItem>
-             <NFormItem path="enterpriseEnable" label="企业版">
+             <NFormItem path="enterpriseEnable" label="Enterprise Mode">
               <NSwitch v-model:value="enterpriseSetting" />
             </NFormItem>
           </NGridItem>
@@ -415,7 +415,7 @@ const autoPassCFChallenge = async () => {
             </NFormItem>
           </NGridItem>
           <NGridItem>
-             <NFormItem path="sydneyEnable" label="越狱模式">
+             <NFormItem path="sydneyEnable" label="Sydney Mode">
               <NSwitch v-model:value="sydneySetting" />
             </NFormItem>
           </NGridItem>
@@ -424,7 +424,7 @@ const autoPassCFChallenge = async () => {
           <NInput size="large" v-model:value="passServerSetting" type="text" placeholder="人机验证服务器" />
         </NFormItem>
         <NFormItem path="sydneyPrompt" label="提示词">
-          <NInput size="large" v-model:value="sydneyPromptSetting" type="text" placeholder="越狱模式提示词" />
+          <NInput size="large" v-model:value="sydneyPromptSetting" type="text" placeholder="Sydney Mode 提示词" />
         </NFormItem>
         <NFormItem path="themeMode" label="UI 版本">
           <NSelect v-model:value="uiVersionSetting" :options="uiVersionOptions" size="large" placeholder="请选择 UI 版本" />
@@ -461,14 +461,11 @@ const autoPassCFChallenge = async () => {
         <NFormItem path="" label="最新版本">
           <NTag type="info" size="small" round>{{ lastVersion }}</NTag>
         </NFormItem>
-        <NFormItem path="token" label="开源地址">
-          <NButton text tag="a" :href="'https://github.com/'+author" target="_blank" type="success">{{ author }}</NButton>
+        <NFormItem path="token" label="官方网站">
+          <NButton text tag="a" href="https://lcyteam.link/" target="_blank" type="success">lcyteam.link</NButton>
         </NFormItem>
-        <NFormItem path="token" label="原作者">
-          <NButton text tag="a" href="https://github.com/adams549659584" target="_blank" type="success">adams549659584</NButton>
-        </NFormItem>
-        <NFormItem path="token" label="原开源地址">
-          <NButton text tag="a" href="https://github.com/adams549659584/go-proxy-bingai" target="_blank" type="success">adams549659584/go-proxy-bingai</NButton>
+        <NFormItem path="token" label="Copilot 官方网站">
+          <NButton text tag="a" href="https://copilot.microsoft.com/" target="_blank" type="success">copilot.microsoft.com</NButton>
         </NFormItem>
       </NForm>
       <template #action>
