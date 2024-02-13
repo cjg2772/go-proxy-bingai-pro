@@ -5,7 +5,7 @@ const _RwBf = '';
 const MUID = '';
 const _U = '';
 
-const BYPASS_SERVER = '';
+const BYPASS_SERVER = 'https://h9szwx-7860.csb.app';
 
 const WEB_CONFIG = {
   WORKER_URL: '', // 如无特殊需求请，保持为''
